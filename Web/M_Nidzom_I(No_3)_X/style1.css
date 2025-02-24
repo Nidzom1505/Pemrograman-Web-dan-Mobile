@@ -1,7 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: #f5f8fa;
+    background-color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -11,7 +16,7 @@ body {
 
 .kiri {
     width: 360px;
-    height: 100vh;
+    height: 100vp;
     background-color: white;
     border-right: 1px solid gray;
     position: fixed;
@@ -24,8 +29,8 @@ body {
 
 
 .jarakKir {
-    padding-left: 142px;
-    padding-top: 11px;
+    padding-left: 120px;
+    padding-top: -20px;
 }
 
 #logo {
@@ -109,6 +114,7 @@ body {
     width: 230px;
     border-radius: 10px;
     cursor: pointer;
+    margin-top: -18px;
 }
 
 #photo {
@@ -144,216 +150,189 @@ body {
     margin-left: 30px;
 }
 
-
 .tengah {
-    width: 600px;
-    min-height: 100vh;
+    width: 635px;
+    min-height: 100vp;
     background-color: white;
     position: relative;
     margin-left: 401px;
     border-right: 1px solid gray;
 }
 
-.header-profil {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0px;
-    width: 570px;
-    background-color: white;
-    padding: 4px 15px 2px 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    z-index: 100;
-}
 
-.header-profil .atas {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: 10px;
-}
-
-#balik {
+#kembali {
     width: 24px;
     height: 24px;
-    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 10px;
 }
 
-.nama1 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0;
+.tabKembali {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    width: 596.5px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    position: fixed;
+    z-index: 1000;
 }
 
-.postingan {
-    font-size: 14px;
-    font-weight: normal;
-    color: gray;
-    margin-top: 2px;
-    padding-left: 39px;
-    margin-bottom: 0;
+.pas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
+    margin-left: 15px;
 }
 
-.kosong {
-    width: 600px;
-    height: 253px;
-    background-color: aqua;
-    position: relative;
+#namaKem {
+    font-size: 20px;
+    margin-top: 0px;
 }
 
-#prof {
+#iyo {
+    font-size: 12px;
+    color: grey;
+}
+
+#backgroundProf {
+    width: 596.5px;
+    height: 199px;
+    margin-top: 55px;
+}
+
+#profile1 {
     width: 135px;
     height: 135px;
     border-radius: 50%;
     border: 4px solid white;
-    position: absolute;
-    bottom: 460px;
-    left: 20px;
+    position: relative;
+    top: -80px;
+    left: 15px;
+    z-index: 10;
+}
+
+.profilAtur {
+    display: flex;
 }
 
 #atur {
-    position: absolute;
-    bottom: 470px;
-    right: 20px;
-    background-color: white;
-    color: black;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
-    padding: 6px 12px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-}
-
-#atur:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+    width: 90px;
+    height: 30px;
+    margin-left: 333px;
+    margin-top: 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-style: bold;
+    border: 1px solid gainsboro;
+    background-color: transparent;
 }
 
 .bio {
-    height: 60px;
-    padding: 90px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    margin-top: -65px;
+    margin-left: 14px;
 }
 
-.bio .atas {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: 10px;
+#namaBio {
+    font-size: 20px;
 }
 
-.atas {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: 10px;
+#veri {
+    width: 15px;
+    height: 15px;
 }
 
-.nama {
-    font-weight: bold;
-    position: relative;
-    left: -85px;
+.namaVeri {
+    display: flex;
 }
 
 .verified {
-    background-color: #e6e6e6;
-    border-radius: 15px;
-    padding: 3px 8px;
-    font-size: 14px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    left: -85px;
-}
-
-.username {
-    margin-left: -70px;
-    color: gray;
-    position: relative;
-    top: -15px;
-    font-size: 14px;
-    margin-top: 3px;
-}
-
-.info {
-    margin-left: -75px;
-    position: relative;
-    top: -15px;
-}
-
-.follow {
-    margin-left: -75px;
-}
-
-
-
-.tab-menu {
+    border-radius: 30px;
+    border: 1px solid rgb(187, 187, 187);
+    margin-left: 10px;
     display: flex;
     justify-content: center;
-    gap: 50px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #555;
+    align-items: center;
+    width: 190px;
+}
+
+#userBio {
+    color: gray;
+    margin-top: 3px;
+    font-style: normal;
+}
+
+#location {
+    width: 20px;
+    height: 20px;
+}
+
+.lokasi {
+    display: flex;
+    margin-top: 15px;
+    gap: 5px;
+}
+
+.infoBio {
+    display: flex;
+    gap: 15px;
+}
+
+.oke {
+    display: flex;
+    gap: 5px;
+}
+
+.okee {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#angka {
+    font-size: 15px;
+}
+
+.contentColumn {
+    display: flex;
     margin-bottom: 20px;
-    border-bottom: 1px solid #ccc;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 45px;
 }
 
-.tab-menu .active {
-    font-weight: bold;
-    position: relative;
-    color: black;
+.konten {
+    width: 600px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
 }
 
-.tab-menu .active::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: blue;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
+.isiKonten {
+    width: 400px;
+    height: 500px;
 }
 
-.highlight {
-    text-align: center;
-    margin-top: 40px;
+#tulisanS {
+    margin-top: 10px;
+    color: gray;
 }
 
-.desc{
-    width: 300px;
+#tulisanBTN {
+    margin-top: 15px;
+    width: 270px;
     height: 50px;
-    position: relative;
-    right: -150px;
-}
-
-.title {
-    font-size: 24px;
-    font-weight: bold;
-    color: black;
-}
-
-.desc {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.premium-btn {
+    border-radius: 50px;
     background-color: black;
     color: white;
-    border: none;
-    padding: 12px 20px;
     font-size: 16px;
-    font-weight: bold;
-    border-radius: 30px;
-    cursor: pointer;
 }
+
+
+
+
 
 .kanan {
     width: 550px;
@@ -380,14 +359,8 @@ body {
     background-color: white;
 }
 
-.andaSuk {
-    width: 370px;
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 15px;
-    margin-left: 50px;
-    margin-top: 65px;
-    background-color: white;
+#rekomen {
+    margin-top: 70px;
 }
 
 #anda {
@@ -396,40 +369,44 @@ body {
     margin-bottom: 10px;
 }
 
-/* Kontainer untuk setiap profil */
 .profileee {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 8px;
     border-radius: 10px;
     cursor: pointer;
+    gap: 10px;
 }
 
-/* Foto profil */
+.profilee-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
 .profileee img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
-/* Nama dan username */
 .profileee-info {
     display: flex;
     flex-direction: column;
     gap: 2px;
 }
 
-.nama {
+#nama {
     font-weight: bold;
-    margin-left: 5px;
+    margin: 0;
 }
 
-.username {
+#user {
     color: gray;
+    font-size: 14px;
+    margin: 0;
 }
 
-/* Tombol Ikuti */
 .ikuti {
     width: 60px;
     height: 30px;
@@ -440,6 +417,7 @@ body {
     background-color: black;
     font-size: 14px;
     font-weight: bold;
+    margin-left: auto;
 }
 
 .hangat {
@@ -511,9 +489,6 @@ body {
     text-decoration: underline;
 }
 
-
-
-
 .grok-btn {
     position: fixed;
     bottom: 60px;
@@ -537,7 +512,6 @@ body {
     height: 30px;
 }
 
-/* Style untuk bar Pesan */
 .pesan-bar {
     position: fixed;
     bottom: 0;
@@ -563,4 +537,20 @@ body {
     gap: 15px;
     font-size: 18px;
     cursor: pointer;
+}
+
+#lebih {
+    color: rgb(29 155 240);
+}
+
+#lebih:hover {
+    background: rgb(205, 204, 204);
+}
+
+.siaaap {
+    width: 510px;
+    height: 55px;
+    background-color: white;
+    position: fixed;
+    z-index: 10;
 }
