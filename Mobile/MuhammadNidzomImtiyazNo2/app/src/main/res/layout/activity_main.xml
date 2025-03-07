@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context=".MainActivity">+
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -43,17 +43,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/menu" />
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView4"
+        android:src="@drawable/profilpengguna"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="300dp"
         android:layout_marginTop="84dp"
         android:background="@drawable/shape_round"
-        android:clipToOutline="true"
+        android:outlineProvider="background"
+        android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profilpengguna" />
+        app:shapeAppearanceOverlay="@style/CircleImageView"/>
 
     <TextView
         android:id="@+id/textView"
@@ -118,35 +120,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView6"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:background="@drawable/shape_round"
-        android:clipToOutline="true"
+        app:shapeAppearanceOverlay="@style/CircleImageView"
         app:srcCompat="@drawable/profilpengguna"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView3"
         android:layout_marginTop="10dp"
         android:layout_marginStart="28dp"/>
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView7"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:background="@drawable/shape_round"
-        android:clipToOutline="true"
+        app:shapeAppearanceOverlay="@style/CircleImageView"
         app:srcCompat="@drawable/profilpengguna"
         app:layout_constraintStart_toEndOf="@id/imageView6"
         app:layout_constraintTop_toTopOf="@id/imageView6"
         android:layout_marginStart="5dp"/>
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView8"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:background="@drawable/shape_round"
-        android:clipToOutline="true"
+        app:shapeAppearanceOverlay="@style/CircleImageView"
         app:srcCompat="@drawable/profilpengguna"
         app:layout_constraintStart_toEndOf="@id/imageView7"
         app:layout_constraintTop_toTopOf="@id/imageView7"
@@ -218,14 +220,14 @@
         app:layout_constraintTop_toTopOf="@+id/textView5"
         app:layout_constraintVertical_bias="1.0" />
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView9"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="364dp"
         android:background="@drawable/shape_round"
-        android:clipToOutline="true"
+        app:shapeAppearanceOverlay="@style/CircleImageView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/profilpengguna" />
@@ -383,26 +385,26 @@
         app:layout_constraintTop_toTopOf="@+id/imageView14"
         android:layout_marginStart="16dp" />
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView16"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="508dp"
         android:background="@drawable/shape_round"
-        android:clipToOutline="true"
+        app:shapeAppearanceOverlay="@style/CircleImageView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/profilpengguna" />
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView23"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="448dp"
         android:background="@drawable/shape_round"
-        android:clipToOutline="true"
+        app:shapeAppearanceOverlay="@style/CircleImageView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/profilpengguna" />
