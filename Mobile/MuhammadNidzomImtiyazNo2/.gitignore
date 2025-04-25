@@ -13,4 +13,5 @@
 .externalNativeBuild
 .cxx
 local.properties
-*_Zone.Identifier
+*.Zone.Identifier
+*Zone.Identifier*
